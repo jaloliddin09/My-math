@@ -1,7 +1,0 @@
-
-# JM Manager
-.env
-.jm_settings.json
-__pycache__/
-*.pyc
-.DS_Store
