@@ -1,16 +1,33 @@
 // ╔══════════════════════════════════════════════════════════╗
-// ║  Jaloliddin Math — Service Worker  v3.6                 ║
+// ║  Jaloliddin Math — Service Worker  v3.8                 ║
 // ║  YANGILASH: CACHE_NAME raqamini o'zgartiring            ║
-// ║  Masalan: 'jm-v3.6' → 'jm-v3.7'                        ║
+// ║  Masalan: 'jm-v3.8' → 'jm-v3.8'                        ║
 // ╚══════════════════════════════════════════════════════════╝
-const CACHE_NAME = 'jm-v3.6';
+const CACHE_NAME = 'jm-v4.0';
 
 // Asosiy fayllar — har doim keshda bo'ladi
 const CORE_FILES = [
   './',
   './index.html',
   './manifest.json',
-  './icon.svg',
+  './assets/icons/icon.svg',
+  // CSS fayllar
+  './css/main.css',
+  './css/samara.css',
+  './css/posts.css',
+  // JS fayllar
+  './js/core.js',
+  './js/settings.js',
+  './js/auth.js',
+  './js/guest.js',
+  './js/admin.js',
+  './js/apps.js',
+  './js/parent.js',
+  './js/posts.js',
+  './js/letters.js',
+  './js/pwa.js',
+  './js/samara.js',
+  './js/profile.js',
 ];
 
 // /apps/ papkasidagi fayllar — har birini keshga qo'shamiz
@@ -18,7 +35,7 @@ const CORE_FILES = [
 const APP_FILES = [
   './apps/kasrlar/index.html',
   './apps/sport/index.html',
-  '.apps/kasrlar_kalkulyator/index.html', 
+  './apps/kasrlar_kalkulyator/index.html', 
   // './apps/yangi-ilova/index.html',   ← yangi ilova shu yerga
 ];
 
